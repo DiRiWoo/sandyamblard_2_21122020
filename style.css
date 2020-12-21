@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "raleway";
+  src: url("polices/Raleway-Regular.woff") format("woff"),
+    url("polices/Raleway-Regular.ttf") format("truetype"),
+    url("polices/Raleway-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "raleway";
+  font-size: 0.9em;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-style: bold;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  margin-top: 4px;
+}
+
+nav {
+  padding-top: 8px;
+}
+
+#logo {
+  width: 60px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header li {
+  margin-right: 15px;
+  font-size: 0.9em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-top: 20px;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px #0065fc solid;
+}
+
+#sinscrire {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+main {
+  width: 97%;
+  margin: auto;
+}
+#listehotels {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px;
+}
+aside {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blocpiedpage {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.blocpiedpage ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.7em;
+  text-align: left;
+  padding-left: 0px;
+  line-height: 1.6em;
+}
+
+h3 {
+  font-size: 0.9em;
+  margin-bottom: 0px;
+}
