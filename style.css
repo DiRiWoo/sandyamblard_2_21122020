@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-style: bold;
   margin-bottom: 0px;
 }
@@ -29,6 +29,7 @@ header {
 
 header p {
   margin-top: 4px;
+  font-size: 0.8em;
 }
 
 nav {
@@ -70,6 +71,64 @@ main {
   width: 97%;
   margin: auto;
 }
+
+input {
+  border: 1px #f2f2f2 solid;
+  font-family: "raleway";
+  font-weight: bold;
+  padding: 8px;
+  display: inline;
+  margin-left: 0px;
+}
+
+input:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-map-marker-alt {
+  border: 2px #f2f2f2 solid;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #f2f2f2;
+  padding: 8px;
+  margin-right: 0px;
+}
+
+#boutonbleu {
+  background-color: #0065fc;
+  color: white;
+  font-family: "raleway";
+  font-weight: bold;
+  border-radius: 0px 10px 10px 0px;
+  border: 1px #0065fc solid;
+  padding: 8px;
+}
+
+select {
+  border: 2px #f2f2f2 solid;
+  border-radius: 20px;
+  padding: 9px;
+  font-family: "raleway";
+  font-size: 0.8em;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-dog,
+.fa-money-bill-wave,
+.fa-heart,
+.fa-child {
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 25px;
+  font-size: 0.7em;
+  padding: 7px;
+}
+
 #listehotels {
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -94,6 +153,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 250px;
+  margin-left: 15px;
 }
 
 .blocpiedpage ul {

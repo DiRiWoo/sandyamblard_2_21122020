@@ -10,7 +10,7 @@
         <header>
             <div id="logotitre">
                 <img id="logo" src="images/logo.png" alt="logo reservia"/>
-                <div><h1> Trouver votre hébergement pour des vacances de rêve</h1>
+                <div><h1> Trouvez votre hébergement pour des vacances de rêve</h1>
                      <p>En plein centre ville ou en pleine nature</p>
                 </div>
             </div>
@@ -25,7 +25,20 @@
 
         <main>
             <section id="filtres">
-                <p> les filtres de recherche ville, etc</p>
+                <p><form method="post" action="traitementformulaire.php"><i class="fas fa-map-marker-alt"></i>
+                    <input type="text" name="ville" id="ville" placeholder="Marseille, France" /><input id="boutonbleu" type="submit" value="Rechercher" /></form></p>
+                 <!--voir si input="usemap" ou si juste un lien vers carte ? et comment le coller mieux au bouton, flexbox ?-->
+                 
+                <p> <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-child"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-dog"></i></p>
+                <p><select name="budget" id="budget"><option value="economique"><i class="fas fa-money-bill-wave"></i>Economique</option></select>
+                   <select name="nombre" id="nombre"><option value="Familial">Familial</option></select>
+                   <select name="ambiance" id="ambiance"><option value="Romantique">Romantique</option></select>
+                   <select name="animaux" id="animaux"><option value="Animaux autorisés">Animaux autorisés</option></select>
+                <!--voir si besoin rajouter balises form-->
+                </p>
             </section>
             <section id="hebergements">
                 <div id="listehotels"> 
