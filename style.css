@@ -10,16 +10,19 @@
 body {
   font-family: "raleway";
   font-size: 0.9em;
+  max-width: 1210px;
+  margin: auto;
 }
 
 h1 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-style: bold;
   margin-bottom: 0px;
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.2em;
+  padding-left: 15px;
 }
 
 /*haut de page*/
@@ -27,11 +30,12 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
 }
 
 header p {
   margin-top: 4px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 nav {
@@ -39,7 +43,7 @@ nav {
 }
 
 #logo {
-  width: 60px;
+  width: 80px;
   margin-top: 20px;
 }
 
@@ -61,7 +65,7 @@ nav a {
 
 nav a:hover {
   color: #0065fc;
-  border-top: 2px #0065fc solid;
+  border-top: 3px #0065fc solid;
 }
 
 #sinscrire {
@@ -114,9 +118,9 @@ input:hover {
 select {
   border: 2px #f2f2f2 solid;
   border-radius: 20px;
-  padding: 9px 9px 9px 35px;
+  padding: 11px 13px 11px 49px;
   font-family: "raleway";
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -133,8 +137,8 @@ select:hover {
   background-color: #deebff;
   color: #0065fc;
   border-radius: 25px;
-  font-size: 0.7em;
-  padding: 11px;
+  font-size: 1em;
+  padding: 15px;
 }
 
 .input-icone {
@@ -145,12 +149,15 @@ select:hover {
 .input-icone i {
   position: absolute;
   left: 0px;
-  top: -8px;
+  top: -12px;
 }
 .fa-info {
   color: #0065fc;
   font-size: 0.7em;
   margin: 10px;
+  padding: 6px;
+  border-radius: 50px;
+  border: 2px #deebff solid;
 }
 
 /*zones résultats hotels*/
@@ -158,10 +165,14 @@ select:hover {
 h4 {
   font-size: 0.8em;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 110%;
 }
 
 #hebergements {
   display: flex;
+  height: 520px;
 }
 
 .fa-star {
@@ -182,22 +193,32 @@ h4 {
   flex: 75%;
 }
 
+#listehotels a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
 .hotel {
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 8px rgb(233, 231, 231);
-  padding: 8px;
+  padding: 4px;
   margin: 10px;
-  width: 300px;
+  width: 230px;
+  height: 170px;
 }
 .hotel img {
-  max-height: 150px;
+  max-height: 110px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
+  margin-bottom: 0px;
 }
 
 .hotel p {
   font-size: 0.6em;
+  line-height: 80%;
 }
 
 #resultatshotels {
@@ -210,19 +231,67 @@ h4 {
   max-height: 900px;
 }
 
+#resultatshotels a {
+  text-decoration: none;
+  font-size: initial;
+  font-weight: initial;
+}
+
+#resultatshotels a:hover {
+  color: #0065fc;
+}
+
 #populaires {
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 25px;
+  padding: 15px;
   margin: 5px;
-  flex: 25%;
-  max-height: 920px;
+  flex: 30%;
+  max-height: 900px;
   overflow: auto;
 }
 
+#populaires header {
+  display: flex;
+  align-items: center;
+}
+
 #populaires .hotel {
-  background-color: red;
-  /*trouver syntaxe pour modifier pour cibler les blocs hotels qui sont dans aside pour modif de l'orientation des blocs qd dans aside*/
+  display: flex;
+  width: 270px;
+  height: 110px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#populaires .hotel img {
+  border-radius: 15px 0px 0px 15px;
+  max-width: 138px;
+}
+
+#resultatspopu a {
+  text-decoration: none;
+  font-size: initial;
+  font-weight: initial;
+}
+
+#resultatspopu a:hover {
+  color: #0065fc;
+}
+
+.texte {
+  padding-left: 8px;
+  padding-top: 10px;
+}
+
+.texte p {
+  line-height: 250%;
+}
+
+.texte a {
+  text-decoration: none;
+  font-size: initial;
+  font-weight: initial;
 }
 
 /*pied de page*/
