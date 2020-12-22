@@ -210,7 +210,7 @@ h4 {
   max-height: 900px;
 }
 
-aside {
+#populaires {
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 25px;
@@ -220,7 +220,8 @@ aside {
   overflow: auto;
 }
 
-aside .hotel {
+#populaires .hotel {
+  background-color: red;
   /*trouver syntaxe pour modifier pour cibler les blocs hotels qui sont dans aside pour modif de l'orientation des blocs qd dans aside*/
 }
 
