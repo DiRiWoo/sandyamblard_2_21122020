@@ -208,16 +208,26 @@ h4 {
   margin: 10px;
   width: 230px;
   height: 170px;
+  align-items: center;
 }
-.hotel img {
-  max-height: 110px;
-  width: 100%;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 0px;
+
+.hotelpopulaire {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(233, 231, 231);
+  padding: 4px;
+  margin: 10px;
+  width: 230px;
+  height: 170px;
 }
 
 .hotel p {
-  font-size: 0.6em;
+  font-size: 0.7em;
+  line-height: 80%;
+}
+
+.hotelpopulaire p {
+  font-size: 0.7em;
   line-height: 80%;
 }
 
@@ -241,6 +251,65 @@ h4 {
   color: #0065fc;
 }
 
+#aubergecanebiere {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/aubergecanebiere.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#hotelport {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/hotelduport.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#hotelmouettes {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/hotelmouettes.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#hotelmer {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/hoteldelamer.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#aubergepanier {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/aubergepanier.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#chezamina {
+  height: 105px;
+  width: 228px;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 3px;
+  background-image: url("images/hebergements/chezamina.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 #populaires {
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -256,7 +325,7 @@ h4 {
   align-items: center;
 }
 
-#populaires .hotel {
+.hotelpopulaire {
   display: flex;
   width: 270px;
   height: 110px;
@@ -264,15 +333,41 @@ h4 {
   margin-bottom: 15px;
 }
 
-#populaires .hotel img {
+#soleilmatin {
   border-radius: 15px 0px 0px 15px;
-  max-width: 138px;
+  width: 138px;
+  height: 110px;
+  margin-bottom: 0px;
+  background-image: url("images/hebergements/soleildumatin.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#bleuetblanc {
+  border-radius: 15px 0px 0px 15px;
+  width: 138px;
+  height: 110px;
+  margin-bottom: 0px;
+  background-image: url("images/hebergements/toutbleuetblanc.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#coeurdeleau {
+  border-radius: 15px 0px 0px 15px;
+  width: 205px;
+  height: 110px;
+  margin-bottom: 0px;
+  background-image: url("images/hebergements/aucoeurdeleau.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #resultatspopu a {
   text-decoration: none;
   font-size: initial;
   font-weight: initial;
+  color: black;
 }
 
 #resultatspopu a:hover {
