@@ -22,6 +22,8 @@ h2 {
   font-size: 1em;
 }
 
+/*haut de page*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,8 @@ nav a:hover {
   color: #0065fc;
   font-weight: bold;
 }
+
+/*section centrale main*/
 
 main {
   width: 97%;
@@ -149,19 +153,78 @@ select:hover {
   margin: 10px;
 }
 
+/*zones résultats hotels*/
+
+h4 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+#hebergements {
+  display: flex;
+}
+
+.fa-star {
+  font-size: 0.8em;
+  color: #f2f2f2;
+}
+
+.bleu {
+  color: #0065fc;
+}
+
 #listehotels {
+  /*conteneur de h2 + div id=resultatshotels*/
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 15px;
   margin: 5px;
+  flex: 75%;
+}
+
+.hotel {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(233, 231, 231);
+  padding: 8px;
+  margin: 10px;
+  width: 300px;
+}
+.hotel img {
+  max-height: 150px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.hotel p {
+  font-size: 0.6em;
+}
+
+#resultatshotels {
+  /*conteneur des blocs class=hotel, resultats 1 par hotel, les mettre sur plusieurs lignes, et limiter à 3 lignes max avec retour scroll possible "afficher plus"*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  overflow: auto;
+  max-height: 900px;
 }
 
 aside {
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 15px;
+  padding: 25px;
   margin: 5px;
+  flex: 25%;
+  max-height: 920px;
+  overflow: auto;
 }
+
+aside .hotel {
+  /*trouver syntaxe pour modifier pour cibler les blocs hotels qui sont dans aside pour modif de l'orientation des blocs qd dans aside*/
+}
+
+/*pied de page*/
 
 footer {
   width: 100%;
