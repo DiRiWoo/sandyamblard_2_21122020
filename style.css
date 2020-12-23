@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "raleway";
+  font-family: "raleway", Arial, serif;
   font-size: 0.9em;
   max-width: 1210px;
   margin: auto;
@@ -40,6 +40,7 @@ header p {
 
 nav {
   padding-top: 8px;
+  margin-right: 50px;
 }
 
 #logo {
@@ -53,8 +54,10 @@ ul {
 }
 
 header li {
-  margin-right: 15px;
+  margin-right: 8px;
+  margin-left: 40px;
   font-size: 0.9em;
+  font-weight: 500;
 }
 
 nav a {
@@ -70,13 +73,13 @@ nav a:hover {
 
 #sinscrire {
   color: #0065fc;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-/*section centrale main*/
+/*partie centrale main, section filtres */
 
 main {
-  width: 97%;
+  width: 100%;
   margin: auto;
 }
 
@@ -153,9 +156,9 @@ select:hover {
 }
 .fa-info {
   color: #0065fc;
-  font-size: 0.7em;
+  font-size: 0.6em;
   margin: 10px;
-  padding: 6px;
+  padding: 5px;
   border-radius: 50px;
   border: 2px #deebff solid;
 }
@@ -173,6 +176,7 @@ h4 {
 #hebergements {
   display: flex;
   height: 520px;
+  margin: 15px;
 }
 
 .fa-star {
@@ -211,22 +215,7 @@ h4 {
   align-items: center;
 }
 
-.hotelpopulaire {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 3px 3px 8px rgb(233, 231, 231);
-  padding: 4px;
-  margin: 10px;
-  width: 230px;
-  height: 170px;
-}
-
 .hotel p {
-  font-size: 0.7em;
-  line-height: 80%;
-}
-
-.hotelpopulaire p {
   font-size: 0.7em;
   line-height: 80%;
 }
@@ -249,6 +238,8 @@ h4 {
 
 #resultatshotels a:hover {
   color: #0065fc;
+  border-radius: 15px;
+  border: 1px #0065fc dotted;
 }
 
 #aubergecanebiere {
@@ -325,12 +316,17 @@ h4 {
   align-items: center;
 }
 
-.hotelpopulaire {
+.principal p,
+h4 {
+  padding-left: 5px;
+}
+
+.populaire {
   display: flex;
   width: 270px;
   height: 110px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #soleilmatin {
@@ -372,11 +368,13 @@ h4 {
 
 #resultatspopu a:hover {
   color: #0065fc;
+  /*border-radius: 15px;
+  border: 2px #0065fc dotted;*/
 }
 
 .texte {
   padding-left: 8px;
-  padding-top: 10px;
+  padding-top: 22px;
 }
 
 .texte p {
@@ -389,6 +387,128 @@ h4 {
   font-weight: initial;
 }
 
+/*zone activités*/
+
+#activites {
+  height: 470px;
+  padding: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+#resultatsactiv {
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.activ {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(233, 231, 231);
+  padding: 0px;
+  margin: 26px;
+  width: 243px;
+  height: 350px;
+  align-items: center;
+}
+
+.activ h4 {
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 15px 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background-color: white;
+}
+
+#vieuxport {
+  border-radius: 15px;
+  width: 243px;
+  height: 350px;
+  background-image: url("images/activites/vieuxport.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#calanques {
+  border-radius: 15px;
+  width: 243px;
+  height: 350px;
+  background-image: url("images/activites/calanques.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#pomegues {
+  border-radius: 15px;
+  width: 243px;
+  height: 150px;
+  background-image: url("images/activites/pomegues.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#frioul {
+  border-radius: 15px;
+  width: 243px;
+  height: 150px;
+  background-image: url("images/activites/frioul.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#notredame {
+  border-radius: 15px;
+  width: 243px;
+  height: 150px;
+  background-image: url("images/activites/notredame.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#longchamp {
+  border-radius: 15px;
+  width: 243px;
+  height: 150px;
+  background-image: url("images/activites/longchamp.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.horiz {
+  height: 150px;
+}
+
+.doublehoriz {
+  display: flex;
+  flex-direction: column;
+}
+
+#resultatsactiv a {
+  text-decoration: none;
+  font-size: initial;
+  font-weight: initial;
+  color: black;
+  border-radius: 15px;
+}
+
+#resultatsactiv a:hover {
+  color: #0065fc;
+  border-radius: 15px;
+  border: 2px #deebff dotted;
+}
+
 /*pied de page*/
 
 footer {
@@ -396,6 +516,7 @@ footer {
   background-color: #f2f2f2;
   display: flex;
   justify-content: flex-start;
+  padding: 20px;
 }
 
 .blocpiedpage {
@@ -418,4 +539,5 @@ footer {
 h3 {
   font-size: 0.9em;
   margin-bottom: 0px;
+  font-weight: 900;
 }
