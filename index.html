@@ -25,13 +25,21 @@
 
         <main>
             <section id="filtres">
-                <p><form method="post" action="traitementformulaire.php"><i class="fas fa-map-marker-alt"></i>
-                    <input type="text" name="ville" id="ville" placeholder="Marseille, France" /><input id="boutonbleu" type="submit" value="Rechercher" /></form></p>
-                 <!--comment le coller mieux au bouton, flexbox ?-->
+                <!-- <div id="filtreville">-->
+                    <div id="boutonrecherche">
+                        <form method="post" action="traitementformulaire.php">
+                        <input id="boutontexte" type="text" name="ville" id="ville" placeholder="Marseille, France" />
+                        <i class="fas fa-map-marker-alt"></i>    
+                        <input id="boutonbleu" type="submit" value="Rechercher" />  
+                        </form>
+                    </div>    
+                  <!-- </div> fin div filtrevile-->
                  
+                
                
-                <p> Filtres <!--form method="post" action="traitementformulaire.php"--><span class="input-icone"><select name="budget" id="budget"><option value="economique">Economique</option></select><i class="fas fa-money-bill-wave"></i></span>
-                    <span class="input-icone"><select name="nombre" id="nombre"><option value="Familial">Familial</option></select><i class="fas fa-child"></i></span>
+                <p> Filtres <!--form method="post" action="traitementformulaire.php"-->
+                    <span id="doublefiltre"><span class="input-icone"><select name="budget" id="budget"><option value="economique">Economique</option></select><i class="fas fa-money-bill-wave"></i></span>
+                                            <span class="input-icone"><select name="nombre" id="nombre"><option value="Familial">Familial</option></select><i class="fas fa-child"></i></span></span>
                     <span class="input-icone"><select name="ambiance" id="ambiance"><option value="Romantique">Romantique</option></select><i class="fas fa-heart"></i></span>
                     <span class="input-icone"><select name="animaux" id="animaux"><option value="Animaux autorisés">Animaux autorisés</option></select><i class="fas fa-dog"></i></span><!--/form--></p>
             </section>
