@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
@@ -11,7 +12,10 @@
     <body>
         <header>
             <div id="logomenu">
-                <img id="logo" src="images/logo.png" alt="logo reservia"/>          
+                <span id="entete">
+                    <img id="logo" src="images/logo.png" alt="logo reservia"/>          
+                    <div id="inscriptionmob">S'inscrire</div>
+                </span>
                 <nav>
                   <ul>
                         <li><a href="#hebergements">Hébergements</a></li>
@@ -33,23 +37,24 @@
                         <input id="boutontexte" type="text" name="ville" id="ville" placeholder="Marseille, France" />
                         <i class="fas fa-map-marker-alt"></i>    
                         <input id="boutonbleu" type="submit" value="Rechercher" />  
+                        <i class="fas fa-search"></i>
                         </form>
                     </div>    
                   <!-- </div> fin div filtrevile-->
                  
                 
                
-                <span class="titrefiltre"> <p>Filtres</p></span> <!--form method="post" action="traitementformulaire.php"-->
+                <p class="titrefiltre"> Filtres <!--form method="post" action="traitementformulaire.php"-->
                 <span class="titrefiltre">
                     <span id="doublefiltre"><span class="input-icone"><select name="budget" id="budget"><option value="economique">Economique</option></select><i class="fas fa-money-bill-wave"></i></span>
                                             <span class="input-icone"><select name="nombre" id="nombre"><option value="Familial">Familial</option></select><i class="fas fa-child"></i></span>
                     </span>
                     <span class="input-icone"><select name="ambiance" id="ambiance"><option value="Romantique">Romantique</option></select><i class="fas fa-heart"></i></span>
                     <span class="input-icone"><select name="animaux" id="animaux"><option value="Animaux autorisés">Animaux autorisés</option></select><i class="fas fa-dog"></i></span><!--/form-->
-                </span>
+                </span></p>
             </section>
-            </p><span id="cercle"><i class="fas fa-info"></i></span>
-             Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="nombretrouve"><span id="cercle"><i class="fas fa-info"></i></span>
+             Plus de 500 logements sont disponibles dans cette ville</div>
             <section id="hebergements">
                 <div id="listehotels"> 
                     <h2>Hébergements à Marseille</h2>
@@ -112,7 +117,7 @@
                             <div id="bleuetblanc"></div>
                             <div class="texte"> <h4>Hotel Tout Bleu et Blanc</h4>
                             <p>Nuits à partir de 68€</p>
-                             <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p><div>
+                             <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p></div>
                         </article></a>
                     </div><!--fin div resultatspopu-->
                 </div><!--fin div populaires-->

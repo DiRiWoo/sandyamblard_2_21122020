@@ -62,7 +62,7 @@ header li {
   margin-right: 8px;
   margin-left: 40px;
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav a {
@@ -80,6 +80,9 @@ nav a:hover {
   color: #0065fc;
   font-weight: 900;
 }
+#inscriptionmob {
+  display: none;
+}
 
 /*partie centrale main, section filtres */
 
@@ -91,6 +94,7 @@ main {
 #filtres p {
   font-size: 0.9em;
   font-weight: bold;
+  line-height: 2em;
 }
 input {
   border: 1px #f2f2f2 solid;
@@ -104,7 +108,7 @@ input {
 }
 
 #boutontexte {
-  width: 250px;
+  width: 220px;
 }
 
 input:hover {
@@ -130,9 +134,11 @@ input:hover {
   border: 1px #0065fc solid;
   padding: 8px;
   position: absolute;
-  left: 280px;
+  left: 260px;
 }
-
+.fa-search {
+  display: none;
+}
 #boutonrecherche {
   position: relative;
   margin-bottom: 25px;
@@ -141,7 +147,7 @@ input:hover {
 select {
   border: 2px #f2f2f2 solid;
   border-radius: 20px;
-  padding: 12px 30px 12px 65px;
+  padding: 12px 10px 12px 45px;
   font-family: "Raleway";
   font-size: 1em;
   font-weight: bold;
@@ -174,6 +180,7 @@ select:hover {
   left: 0px;
   top: -13px;
 }
+
 .fa-info {
   display: inline-block;
   color: #0065fc;
@@ -214,6 +221,11 @@ h4 {
   margin: 15px;
 }
 
+#nombretrouve {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
 .fa-star {
   font-size: 0.8em;
   color: #f2f2f2;
@@ -571,7 +583,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-align: left;
   padding-left: 0px;
   line-height: 1.6em;
@@ -585,11 +597,117 @@ h3 {
 
 /*-----MEDIA QUERIES-----*/
 @media screen and (max-width: 1024px) {
+  /*html {
+    font-size: 200%;
+  }*/
+
+  #logomenu {
+    flex-direction: column;
+  }
+  #logo {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  #sinscrire {
+    display: none;
+  }
+
+  #inscriptionmob {
+    display: initial;
+    color: #0065fc;
+    font-weight: 900;
+    margin-top: 8px;
+  }
+
+  #entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  header nav {
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  header nav ul {
+    padding: 0px;
+  }
+
+  header nav li {
+    font-size: 1em;
+    flex: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 2px #f2f2f2 solid;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 10px;
+  }
+
+  nav li a:hover {
+    border-bottom: 2px #0065fc solid;
+  }
+  nav a:hover {
+    border-top: none;
+  }
+  header p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  h1 {
+    margin-left: 15px;
+  }
   body {
-    background-color: chocolate;
     width: auto;
     height: auto;
     margin: auto;
+  }
+  /*header {
+    max-width: 98%;
+  }*/
+
+  #boutonbleu {
+    display: none;
+  }
+  #boutonrecherche {
+    margin-left: 10px;
+  }
+
+  #boutontexte {
+    width: 180px;
+  }
+
+  .fa-search {
+    display: initial;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 200px;
+  }
+  /*#filtres {
+    max-width: 96%;
+  }*/
+
+  #filtres p {
+    margin-left: 10px;
+  }
+
+  .input-icone {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  .fa-heart,
+  .fa-dog {
+    margin-top: 12px;
   }
 
   .titrefiltre {
@@ -597,16 +715,25 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+  #cercle {
+    display: block;
+  }
+  #nombretrouve {
+    align-items: baseline;
+  }
 
   #hebergements {
     flex-direction: column;
     height: auto;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px; /*pour coller blocs aux cotés en mobile*/
   }
   #listehotels {
     order: 2;
     background-color: white;
     height: auto;
-    flex: 66%;
+    max-height: none;
   }
 
   #resultatshotels {
@@ -615,6 +742,7 @@ h3 {
     flex: 95%;
     align-items: center;
     flex-wrap: nowrap;
+    max-height: none;
   }
 
   #listehotels h2 {
@@ -624,13 +752,32 @@ h3 {
   #populaires {
     order: 1;
     border-radius: 0px;
-    flex: 33%;
+    max-height: none;
+    width: 100%;
   }
 
   #resultatspopu {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #aubergecanebiere,
+  #hotelport,
+  #hotelmouettes,
+  #hotelmer,
+  #aubergepanier,
+  #chezamina {
+    height: 80px;
+  }
+
+  .principal {
+    height: 135px;
+  }
+
+  .principal h4,
+  p {
+    line-height: 0.8em;
   }
 
   #activites {
@@ -642,7 +789,24 @@ h3 {
     align-items: center;
   }
 
+  .vertic {
+    height: 150px;
+  }
+
+  #calanques {
+    height: 150px;
+  }
+
+  #vieuxport {
+    height: 150px;
+  }
+
   footer {
     flex-direction: column;
+    max-width: 100%;
+  }
+
+  .blocpiedpage {
+    margin-right: 0px;
   }
 }
