@@ -217,7 +217,7 @@ h4 {
 
 #hebergements {
   display: flex;
-  height: 520px;
+  height: 540px;
   margin: 15px;
 }
 
@@ -354,7 +354,7 @@ h4 {
   padding: 15px;
   margin: 5px;
   flex: 30%;
-  max-height: 900px;
+  max-height: 1000px;
   overflow: auto;
 }
 
@@ -378,8 +378,8 @@ h4 {
   display: flex;
   width: 270px;
   height: 110px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 #soleilmatin {
@@ -421,9 +421,10 @@ h4 {
 
 #resultatspopu a:hover {
   color: #0065fc;
-  border-radius: 15px;
-  border: 2px #0065fc dotted;
-} /*voir pourquoi ça ne marche pas !*/
+}
+/*border-radius: 15px;
+  border: 1px #0065fc dotted;
+ voir pourquoi ça ne marche pas ! pas du tout sur edge, et pas bien sur firefox*/
 
 .texte {
   padding-left: 8px;
@@ -596,7 +597,7 @@ h3 {
 }
 
 /*-----MEDIA QUERIES-----*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   /*html {
     font-size: 200%;
   }*/
@@ -648,11 +649,20 @@ h3 {
     padding-bottom: 10px;
   }
 
-  nav li a:hover {
+  nav li:active {
+    border-bottom: 2px #0065fc solid;
+  }
+  nav li:focus {
     border-bottom: 2px #0065fc solid;
   }
   nav a:hover {
     border-top: none;
+    text-decoration: none;
+  }
+  nav a:active {
+    border-top: none;
+    text-decoration: none;
+    color: #0065fc;
   }
   header p {
     margin-top: 20px;
@@ -668,9 +678,15 @@ h3 {
     height: auto;
     margin: auto;
   }
-  /*header {
-    max-width: 98%;
-  }*/
+  header {
+    width: 95%;
+    margin: auto;
+  }
+
+  main {
+    margin: auto;
+    max-width: 100%;
+  }
 
   #boutonbleu {
     display: none;
@@ -692,9 +708,6 @@ h3 {
     position: absolute;
     left: 200px;
   }
-  /*#filtres {
-    max-width: 96%;
-  }*/
 
   #filtres p {
     margin-left: 10px;
@@ -707,7 +720,7 @@ h3 {
 
   .fa-heart,
   .fa-dog {
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .titrefiltre {
@@ -720,12 +733,14 @@ h3 {
   }
   #nombretrouve {
     align-items: baseline;
+    margin-right: 15px;
   }
 
   #hebergements {
     flex-direction: column;
     height: auto;
     max-width: 100%;
+    align-items: center;
     margin-left: 0px;
     margin-right: 0px; /*pour coller blocs aux cotés en mobile*/
   }
@@ -734,6 +749,11 @@ h3 {
     background-color: white;
     height: auto;
     max-height: none;
+    width: 100%;
+  }
+
+  #listehotels p {
+    margin-left: 15px;
   }
 
   #resultatshotels {
@@ -753,7 +773,9 @@ h3 {
     order: 1;
     border-radius: 0px;
     max-height: none;
-    width: 100%;
+    width: 97%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #resultatspopu {
@@ -781,6 +803,7 @@ h3 {
   }
 
   #activites {
+    margin-left: 0px;
     width: 100%;
     height: auto;
   }
@@ -803,7 +826,7 @@ h3 {
 
   footer {
     flex-direction: column;
-    max-width: 100%;
+    max-width: 92%;
   }
 
   .blocpiedpage {
