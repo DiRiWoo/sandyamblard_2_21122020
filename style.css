@@ -177,7 +177,7 @@ select:hover {
   color: #0065fc;
   border-radius: 25px;
   font-size: 1.1em;
-  padding: 14px;
+  padding: 15px;
 }
 
 .input-icone {
@@ -188,7 +188,7 @@ select:hover {
 .input-icone i {
   position: absolute;
   left: -1px;
-  top: -13px;
+  top: -14px;
 }
 
 .fa-info {
@@ -557,7 +557,7 @@ h3 {
   }
 
   select:hover {
-    background-color: none;
+    background-color: white;
   }
   #hebergements {
     flex-direction: column-reverse;
@@ -766,10 +766,11 @@ h3 {
   }
 
   select:hover {
-    background-color: none;
+    background-color: white;
   }
 
-  #titrefiltre {
+  #titrefiltre,
+  #listefiltres {
     display: block;
     display: flex;
     flex-direction: column;
