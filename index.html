@@ -31,70 +31,79 @@
 
         <main>
             <section id="filtres">
-                <!-- <div id="filtreville">-->
-                    <div id="boutonrecherche">
-                        <form method="post" action="traitementformulaire.php">
-                        <input id="boutontexte" type="text" name="ville" id="ville" placeholder="Marseille, France" />
-                        <i class="fas fa-map-marker-alt"></i>    
-                        <input id="boutonbleu" type="submit" value="Rechercher" />  
-                        <i class="fas fa-search"></i>
-                        </form>
-                    </div>    
-                  <!-- </div> fin div filtrevile-->
-                 
-                
-               
-                <p class="titrefiltre"> Filtres <!--form method="post" action="traitementformulaire.php"-->
-                <span class="titrefiltre">
-                    <span id="doublefiltre"><span class="input-icone"><select name="budget" id="budget"><option value="economique">Economique</option></select><i class="fas fa-money-bill-wave"></i></span>
-                                            <span class="input-icone"><select name="nombre" id="nombre"><option value="Familial">Familial</option></select><i class="fas fa-child"></i></span>
+                <div id="boutonrecherche">
+                    <form method="post" action="traitementformulaire.php">
+                    <input id="boutontexte" type="text" name="ville" placeholder="Marseille, France" />
+                    <i class="fas fa-map-marker-alt"></i>    
+                    <input id="boutonbleu" type="submit" value="Rechercher" />  
+                    <i class="fas fa-search"></i>
+                    </form>
+                </div>    
+                <div id="titrefiltre"> <h3>Filtres</h3> 
+                    <!--form method="post" action="traitementformulaire.php"-->
+                    <span id="doublefiltre">
+                        <span class="input-icone"><select name="budget" id="budget"><option value="economique">Economique</option></select><i class="fas fa-money-bill-wave"></i></span>
+                        <span class="input-icone"><select name="nombre" id="nombre"><option value="Familial">Familial</option></select><i class="fas fa-child"></i></span>
                     </span>
                     <span class="input-icone"><select name="ambiance" id="ambiance"><option value="Romantique">Romantique</option></select><i class="fas fa-heart"></i></span>
-                    <span class="input-icone"><select name="animaux" id="animaux"><option value="Animaux autorisés">Animaux autorisés</option></select><i class="fas fa-dog"></i></span><!--/form-->
-                </span></p>
-            </section>
-            <div id="nombretrouve"><span id="cercle"><i class="fas fa-info"></i></span>
-             Plus de 500 logements sont disponibles dans cette ville</div>
+                    <span class="input-icone"><select name="animaux" id="animaux"><option value="Animaux autorisés">Animaux autorisés</option></select><i class="fas fa-dog"></i></span><!--/form-->   
+                </div>
+                <div id="nombretrouve"><span id="cercle"><i class="fas fa-info"></i></span>
+                    Plus de 500 logements sont disponibles dans cette ville</div>
+            </section><!--fin section filtres-->
+            
             <section id="hebergements">
                 <div id="listehotels"> 
                     <h2>Hébergements à Marseille</h2>
                     <div id="resultatshotels">
                         <a href="#"><article class="hotel principal">
-                           <div id="aubergecanebiere"></div>
-                            <h4>Auberge La Canebière</h4>
-                            <p>Nuits à partir de 25€</p>
-                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                           <div class="image" id="aubergecanebiere"></div>
+                           <div class="legende">
+                                <h4>Auberge La Canebière</h4>
+                                <p>Nuits à partir de 25€</p>
+                                <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                            </div>
                         </article></a>
                         <a href="#"><article class="hotel principal">
-                            <div id="hotelport"></div>
-                            <h4>Hotel du port</h4>
-                            <p>Nuits à partir de 52€</p>
-                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
+                            <div class="image" id="hotelport"></div>
+                            <div class="legende">
+                                 <h4>Hotel du port</h4>
+                                 <p>Nuits à partir de 52€</p>
+                                  <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
+                            </div>
                         </article></a>
                         <a href="#"><article class="hotel principal">
-                            <div id="hotelmouettes"></div>
-                            <h4>Hotel Les mouettes</h4>
-                            <p>Nuits à partir de 76€</p>
-                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                            <div class="image" id="hotelmouettes"></div>
+                            <div class="legende">
+                                 <h4>Hotel Les mouettes</h4>
+                                 <p>Nuits à partir de 76€</p>
+                                 <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                            </div>   
                         </article></a>
                         <a href="#"><article class="hotel principal">
-                            <div id="hotelmer"></div>
-                            <h4>Hotel de la mer</h4>
-                            <p>Nuits à partir de 46€</p>
-                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <div class="image" id="hotelmer"></div>
+                            <div class="legende">
+                                <h4>Hotel de la mer</h4>
+                                <p>Nuits à partir de 46€</p>
+                                <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            </div>
                         </article></a>
                         <a href="#"><article class="hotel principal">
-                            <div id="aubergepanier"></div>
-                            <h4>Auberge Le Panier</h4>
-                            <p>Nuits à partir de 23€</p>
-                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                            <div class="image" id="aubergepanier"></div>
+                            <div class="legende">
+                                <h4>Auberge Le Panier</h4>
+                                <p>Nuits à partir de 23€</p>
+                                <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p>
+                             </div>
                         </article></a>
                         <a href="#"><article class="hotel principal">
-                            <div id="chezamina"></div>
-                             <h4>Hotel chez Amina</h4>
-                              <p>Nuits à partir de 96€</p>
-                              <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
-                        </article>  </a>
+                            <div class="image" id="chezamina"></div>
+                            <div class="legende">
+                                <h4>Hotel chez Amina</h4>
+                                <p>Nuits à partir de 96€</p>
+                                <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p>
+                            </div> 
+                        </article></a>
                     </div><!--fin div resultatshotels-->
                     <p><a href="#">Afficher plus</a></p>   
                 </div><!--fin div listehotels-->
@@ -102,19 +111,19 @@
                     <header><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></header>
                     <div id="resultatspopu">
                         <a href="#"><article class="hotel populaire">
-                            <div id="soleilmatin"></div>
+                            <div class="image" id="soleilmatin"></div>
                             <div class="texte"><h4>Hotel le soleil du matin</h4>
                             <p>Nuits à partir de 128€</p>
                             <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i></p></div>
                         </article></a>
                         <a href="#"><article class="hotel populaire">
-                            <div id="coeurdeleau"></div>
-                            <div class="texte"><h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                            <div class="image" id="coeurdeleau"></div>
+                            <div class="texte"><h4>Au coeur de l'eau<br /> Chambres d'hôtes</h4>
                            <p>Nuits à partir de 71€</p>
                            <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p></div>
                         </article></a>
                         <a href="#"><article class="hotel populaire">
-                            <div id="bleuetblanc"></div>
+                            <div class="image" id="bleuetblanc"></div>
                             <div class="texte"> <h4>Hotel Tout Bleu et Blanc</h4>
                             <p>Nuits à partir de 68€</p>
                              <p><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star"></i></p></div>
