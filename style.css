@@ -162,6 +162,7 @@ select {
   font-weight: bold;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: white;
 }
 
 select:hover {
@@ -555,6 +556,9 @@ h3 {
     font-size: 0.9em;
   }
 
+  select:hover {
+    background-color: none;
+  }
   #hebergements {
     flex-direction: column-reverse;
     height: auto;
@@ -757,6 +761,9 @@ h3 {
     margin-top: 14px;
   }
 
+  select:hover {
+    background-color: none;
+  }
   #titrefiltre {
     display: block;
     display: flex;
