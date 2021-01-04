@@ -1,12 +1,3 @@
-/*@font-face {
-  font-family: "raleway";
-  src: url("polices/Raleway-Regular.woff") format("woff"),
-    url("polices/Raleway-Regular.ttf") format("truetype"),
-    url("polices/Raleway-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 * {
   box-sizing: border-box;
 }
@@ -32,8 +23,6 @@ h2 {
 /*haut de page*/
 
 header {
-  /*display: flex;
-  justify-content: space-between;*/
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 2vw;
@@ -48,14 +37,15 @@ header p {
   display: flex;
   justify-content: space-between;
 }
+
 nav {
   padding-top: 8px;
   margin-right: 50px;
 }
 
 #logo {
-  width: 80px;
-  margin-top: 20px;
+  width: 100px;
+  margin-top: 10px;
 }
 
 ul {
@@ -204,20 +194,14 @@ select:hover {
   display: inline-block;
   color: #0065fc;
   font-size: 0.7em;
-  /*width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  border: 2px #f2f2f2 solid;
-  text-align: center;
-  line-height: 17px;-------ne marche pas si cercle directement autour icone*/
 }
 
 /*zones résultats hotels*/
 
 #cercle {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: 2px #f2f2f2 solid;
   text-align: center;
@@ -250,12 +234,10 @@ h4 {
   margin-bottom: 2vw;
 }
 
-#listehotels {
-  /*conteneur de h2 + div id=resultatshotels*/
+#listehotels /*conteneur de h2 + div id=resultatshotels*/ {
   background-color: #f2f2f2;
   border-radius: 15px;
-  /* padding: 15px;
-  margin: 5px;*/
+
   flex: 55%;
   margin-right: 1vw;
 }
@@ -269,44 +251,27 @@ h4 {
   margin-left: 1vw;
 }
 
-#resultatshotels {
-  /*conteneur des blocs class=hotel, resultats 1 par hotel, les mettre sur plusieurs lignes, et limiter à 3 lignes max avec retour scroll possible "afficher plus"*/
+#resultatshotels  /*conteneur des blocs class=hotel, resultats 1 par hotel, les mettre sur plusieurs lignes, et limiter à 3 lignes max avec retour scroll possible "afficher plus"*/ {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-/*#resultatshotels a {
-  text-decoration: none;
-  font-size: initial;
-  font-weight: initial;
-  color: black;
-  display: flex;
-}*/
-
 #resultatshotels a:hover {
   color: #0065fc;
-  /*border-radius: 15px;
-  border: 1px #0065fc dotted;*/
 }
 
-.hotel {
-  /*articles generaux*/
+.hotel /*articles de listehotels et de populaires*/ {
   display: flex;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 8px rgb(233, 231, 231);
   margin: 0.8vw 0.5vw;
-  /*padding: 4px;
- 
-  width: 230px;
-  height: 170px;*/
 }
 
 .hotel p {
   font-size: 0.8em;
-  /*line-height: 80%;*/
 }
 .fa-star {
   font-size: 0.8em;
@@ -317,8 +282,7 @@ h4 {
   color: #0065fc;
 }
 
-.principal {
-  /*article ds resultatshotels*/
+.principal /*article ds resultatshotels*/ {
   flex-direction: column;
   align-items: center;
   width: 17vw;
@@ -346,61 +310,25 @@ h4 {
 }
 
 #aubergecanebiere {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/aubergecanebiere.jpg");
 }
 
 #hotelport {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/hotelduport.jpg");
 }
 #hotelmouettes {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/hotelmouettes.jpg");
 }
 
 #hotelmer {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/hoteldelamer.jpg");
 }
 
 #aubergepanier {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/aubergepanier.jpg");
 }
 
 #chezamina {
-  /*background-position: center;
-  background-size: cover;
-  height: 105px;
-  width: 228px;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: 3px;*/
   background-image: url("images/hebergements/chezamina.jpg");
 }
 
@@ -408,11 +336,7 @@ h4 {
   background-color: #f2f2f2;
   border-radius: 15px;
   margin-right: 1vw;
-  /*padding: 15px;
-  margin: 5px;*/
   flex: 25%;
-  /*max-height: 1000px;*/
-  /*overflow: auto;*/
 }
 
 .fa-chart-line {
@@ -446,21 +370,10 @@ h4 {
   color: #0065fc;
 }
 
-/*.principal p,
-h4 {
-  padding-left: 5px;
-  padding-right: 5px;
-}*/
-/*.principal p {
-  font-weight: 400;
-}*/
-
 .populaire {
   width: 27vw;
   height: 11vw;
   display: flex;
-  /*margin-top: 15px;
-  margin-bottom: 15px;*/
   align-items: center;
 }
 
@@ -474,31 +387,14 @@ h4 {
   background-size: cover;
 }
 #soleilmatin {
-  /*border-radius: 15px 0px 0px 15px;
-  width: 138px;
-  height: 110px;
-  margin-bottom: 0px;/*background-position: center;
-  background-size: cover;*/
   background-image: url("images/hebergements/soleildumatin.jpg");
 }
 
 #bleuetblanc {
-  /*background-position: center;
-  background-size: cover;
-  border-radius: 15px 0px 0px 15px;
-  width: 138px;
-  height: 110px;
-  margin-bottom: 0px;*/
   background-image: url("images/hebergements/toutbleuetblanc.jpg");
 }
 
 #coeurdeleau {
-  /* border-radius: 15px 0px 0px 15px;
-  width: 138px;
-  height: 110px;
-  margin-bottom: 0px;
-  background-position: center;
-  background-size: cover;*/
   background-image: url("images/hebergements/aucoeurdeleau.jpg");
 }
 
@@ -527,21 +423,11 @@ h4 {
 
 #activites {
   width: 100%;
-  height: 39vw;
-  margin-bottom: 2vw;
-  /*height: 470px;
-  padding: 15px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin: 5px;
-  max-width: 100%;*/
+  height: 38vw;
 }
 
 #resultatsactiv {
   display: flex;
-
-  /*padding-left: 0px;
-  padding-right: 0px;*/
   align-items: center;
   justify-content: space-around;
 }
@@ -554,12 +440,6 @@ h4 {
   background-position: center;
   background-size: cover;
   position: relative;
-  /*height: 30vw;*/
-  /*padding: 0px;
-  margin: 26px;
-  width: 243px;
-  height: 350px;
-  align-items: center;*/
 }
 
 .activ h4 {
@@ -622,11 +502,9 @@ h4 {
 
 #resultatsactiv a:hover {
   color: #0065fc;
-  /*border-radius: 15px;
-  border: 2px #deebff dotted; enlever modif au survol*/
 }
 
-/*pied de page*/
+/*-------pied de page--------------*/
 
 footer {
   width: 100%;
@@ -753,9 +631,6 @@ h3 {
 
 /*-----MEDIA QUERIES----MOBILE------------*/
 @media all and (max-width: 767px) {
-  /*html {
-    font-size: 200%;
-  }*/
   body {
     width: auto;
     height: auto;
@@ -907,7 +782,7 @@ h3 {
     width: 100%;
     align-items: center;
     margin-left: 0px;
-    margin-right: 0px; /*pour coller blocs aux cotés en mobile*/
+    margin-right: 0px;
   }
   #listehotels {
     order: 2;
@@ -921,7 +796,6 @@ h3 {
   #resultatshotels {
     display: flex;
     flex-direction: column;
-    /*align-items: stretch;*/
     flex: 95%;
     align-items: center;
   }
