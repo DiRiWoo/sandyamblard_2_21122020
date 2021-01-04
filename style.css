@@ -110,7 +110,7 @@ input {
   font-family: "Raleway";
   font-weight: bold;
   padding: 15px 8px;
-  padding-left: 5vw;
+  padding-left: 5.4vw;
   display: inline;
   margin-left: 0px;
   font-size: 1em;
@@ -125,10 +125,10 @@ input:hover {
 }
 
 .fa-map-marker-alt {
-  border: 2px #f2f2f2 solid;
+  /*border: 2px #f2f2f2 solid;*/
   border-radius: 10px 0px 0px 10px;
   background-color: #f2f2f2;
-  padding: 15px 8px;
+  padding: 17px 14px;
   margin-right: 0px;
   position: absolute;
   left: 0px;
@@ -140,10 +140,11 @@ input:hover {
   font-family: "Raleway";
   font-weight: bold;
   border-radius: 0px 10px 10px 0px;
-  border: 1px #0065fc solid;
-  padding: 15px;
+  /*border: 1px #0065fc solid;*/
+  padding: 16px;
   position: absolute;
-  left: 20vw;
+  left: 17vw;
+  top: -1px;
 }
 .fa-search {
   display: none;
