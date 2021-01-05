@@ -117,7 +117,7 @@ input {
 }
 
 #boutontexte {
-  width: 20vw;
+  width: 25vw;
 }
 
 input:hover {
@@ -143,7 +143,7 @@ input:hover {
   /*border: 1px #0065fc solid;*/
   padding: 16px;
   position: absolute;
-  left: 17vw;
+  left: 22vw;
   top: -1px;
 }
 .fa-search {
@@ -791,6 +791,10 @@ h3 {
     align-items: baseline;
     margin-right: 15px;
     margin-bottom: 15px;
+  }
+
+  #cercle {
+    width: 25px;
   }
 
   #hebergements {
