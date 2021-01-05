@@ -752,6 +752,10 @@ h3 {
     left: 67vw;
   }
 
+  button {
+    border: 1px;
+  }
+
   #filtres p {
     margin-left: 10px;
   }
